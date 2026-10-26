@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ภูมิเมล — สมัครรับข่าวตามภูมิภาค</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main class="hero">
+    <p class="brand">ภูมิเมล</p>
+    <h1 class="headline">รับข่าวที่ตรงกับภูมิภาคของคุณ</h1>
+    <p class="lede">กรอกอีเมล เลือกภาค แล้วเราจะส่งอัปเดตที่เกี่ยวกับพื้นที่นั้นให้คุณ</p>
+
+    <form id="signup-form" class="signup" novalidate>
+      <label class="field">
+        <span>ชื่อ</span>
+        <input id="displayName" name="displayName" type="text" autocomplete="name" placeholder="ชื่อของคุณ" required maxlength="120" />
+      </label>
+
+      <label class="field">
+        <span>อีเมล</span>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="256" />
+      </label>
+
+      <fieldset class="regions">
+        <legend>ภูมิภาค</legend>
+        <div id="region-list" class="region-list" role="radiogroup" aria-label="เลือกภูมิภาค"></div>
+      </fieldset>
+
+      <button type="submit" class="cta" id="submit-btn">สมัครรับข่าว</button>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <script src="/js/site.js" type="module"></script>
+</body>
+</html>

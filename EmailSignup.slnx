@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EmailSignup.Application/EmailSignup.Application.csproj" />
+    <Project Path="src/EmailSignup.Domain/EmailSignup.Domain.csproj" />
+    <Project Path="src/EmailSignup.Infrastructure/EmailSignup.Infrastructure.csproj" />
+    <Project Path="src/EmailSignup.Web/EmailSignup.Web.csproj" />
+  </Folder>
+</Solution>
